@@ -114,6 +114,7 @@
 .thumbnail ul li{
    list-style: none;
    overflow: hidden;
+   margin: 10px;
 }
 
 
@@ -161,12 +162,33 @@ footer{
     height: 100px;
     bottom: auto;
     width: 100%;
-    background: yellow;
+    margin-top: 15px;
 }
 
 footer p{
+    font-family: 'Lato', sans-serif;
+    display: inline-block;
+    width: auto;
+    font-size: 0.7em;
+    color: #464646;
+    line-height: 200%;
     padding: 0;
     margin: 0;
+}
+
+footer .footerWrap{
+    background: white;
+    border-top: 1px solid #e8e8e8; 
+    margin: 0 auto;
+    padding: 1.2em 0.8em;
+}
+
+footer .footerWrap .socialIcon{
+    float: right;
+}
+
+footer .footerWrap .socialIcon a img:nth-child(1){
+    margin-left: 10px;
 }
 
 /**---Media Query----**/
@@ -232,6 +254,7 @@ footer p{
         display: inline-block;
         width: 30%;
         height: auto;
+        margin: 0;
         margin-right: 5%;
     /*        margin-left: -4px;*/
         margin-bottom: 2em;
@@ -241,5 +264,30 @@ footer p{
     {
        margin-right: 0; 
     }
+    
+    footer p{
+       display: inline-block;
+       width: auto;
+       margin-top: 15px;
+       line-height: 200%;
+    }
+    
+    footer .footerWrap{
+        max-width: 1080px;
+        background: white;
+        padding: 0;
+        border-top: 1px solid #e8e8e8; 
+        margin: 0 auto;
+    }
+    
+    footer .footerWrap .socialIcon{
+        float: right;
+        margin-top: 15px;
+    }
+    
+    footer .footerWrap .socialIcon a img:nth-child(1){
+        margin-left: 10px;
+    }
+    
     
 }
